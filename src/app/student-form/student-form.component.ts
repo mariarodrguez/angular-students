@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { Student } from '../student';
+import { MessageService } from '../message.service';
+
 
 @Component({
   selector: 'app-student-form',
@@ -21,9 +23,16 @@ export class StudentFormComponent {
        group: 'A'
   };
 
+  constructor(
+    private messageService: MessageService) { }
+
+
   submitted = false;
 
-  onSubmit() { this.submitted = true; }
+  onSubmit() { 
+    this.submitted = true; 
+    this.log('submited student')
+  }
 
   newStudent() {
     this.model = {
@@ -32,5 +41,11 @@ export class StudentFormComponent {
       email: '',
       group: ''
     };
+    this.log('new student')
   }
+
+  private log(message: string) {
+    this.messageService.add(`StudentService: ${message}`);
+  }
+
 }
