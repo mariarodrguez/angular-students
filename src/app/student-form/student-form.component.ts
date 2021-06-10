@@ -33,11 +33,11 @@ export class StudentFormComponent {
   }
 
   newStudent() { //1
-    this.model = {
-      id: 1,
-      name: '',
-      email: '',
-      group: ''
+    this.model = { //1
+      id: 1, //1
+      name: '', //1
+      email: '', //1
+      group: '' //1
     };
     this.log('new student')
   }
