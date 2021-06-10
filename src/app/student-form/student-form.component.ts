@@ -14,7 +14,7 @@ export class StudentFormComponent {
 
   //model = new Student(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
-  model: Student = {
+  model: Student = { 
        id: 1,
        name: 'María',
        email: 'maria@email',
@@ -32,7 +32,7 @@ export class StudentFormComponent {
     this.log('submited student')
   }
 
-  newStudent() {
+  newStudent() { //1
     this.model = {
       id: 1,
       name: '',
