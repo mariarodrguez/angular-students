@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-
 import { Student } from '../student';
 import { MessageService } from '../message.service';
-
 
 @Component({
   selector: 'app-student-form',
