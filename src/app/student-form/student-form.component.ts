@@ -14,11 +14,11 @@ export class StudentFormComponent {
 
   //model = new Student(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
-  model: Student = { 
-       id: 1,
-       name: 'María',
-       email: 'maria@email',
-       group: 'A'
+  model: Student = { //1
+       id: 1,  //2
+       name: 'María', //1
+       email: 'maria@email', //2
+       group: 'A' //2
   };
 
   constructor(
